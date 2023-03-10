@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAEF7C0029B2985300972107 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7BFF29B2985300972107 /* AppDelegate.swift */; };
+		FAEF7C0229B2985300972107 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C0129B2985300972107 /* SceneDelegate.swift */; };
+		FAEF7C0729B2985300972107 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEF7C0529B2985300972107 /* Main.storyboard */; };
+		FAEF7C0929B2985600972107 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF7C0829B2985600972107 /* Assets.xcassets */; };
+		FAEF7C0C29B2985600972107 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEF7C0A29B2985600972107 /* LaunchScreen.storyboard */; };
+		FAEF7C3129B298B600972107 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C3029B298B600972107 /* Calculator.swift */; };
+		FAEF7C3329B29BC900972107 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C3229B29BC900972107 /* CalculatorTests.swift */; };
+		FAEF7C3629B2A32C00972107 /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = FAEF7C3529B2A32C00972107 /* workoutData.txt */; };
+		FAEF7C3929B2A36500972107 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C3829B2A36500972107 /* DataParser.swift */; };
+		FAEF7C3B29B2A3E300972107 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C3A29B2A3E300972107 /* HistoryItem.swift */; };
+		FAEF7C3F29B2A84100972107 /* DataParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C3E29B2A84100972107 /* DataParserTests.swift */; };
+		FAEF7C4229B2B5BE00972107 /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4129B2B5BE00972107 /* ExercisesViewController.swift */; };
+		FAEF7C4429B2B98200972107 /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4329B2B98200972107 /* ExercisesViewModel.swift */; };
+		FAEF7C4629B2BAD000972107 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4529B2BAD000972107 /* ExerciseCell.swift */; };
+		FAEF7C4929B2CE9200972107 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4829B2CE9200972107 /* ExerciseDetailsViewController.swift */; };
+		FAEF7C4B29B63F4100972107 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4A29B63F4100972107 /* Calculation.swift */; };
+		FAEF7C4D29B6478300972107 /* ExerciseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C4C29B6478300972107 /* ExerciseDetailsViewModel.swift */; };
+		FAEF7C5229B64AEA00972107 /* OneRepMaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C5129B64AEA00972107 /* OneRepMaxView.swift */; };
+		FAEF7C5629B6667B00972107 /* UIOneRepMaxChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C5529B6667B00972107 /* UIOneRepMaxChart.swift */; };
+		FAEF7C5A29B668A600972107 /* OneRepMaxChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C5929B668A600972107 /* OneRepMaxChart.swift */; };
+		FAEF7C6129B6B09800972107 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAEF7C6329B6B09800972107 /* Localizable.strings */; };
+		FAEF7CA029B820C700972107 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF7C9F29B820C700972107 /* Exercise.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAEF7C1329B2985700972107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAEF7BF429B2985300972107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAEF7BFB29B2985300972107;
+			remoteInfo = "One Rep Max";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAEF7BFC29B2985300972107 /* One Rep Max.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Rep Max.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF7BFF29B2985300972107 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAEF7C0129B2985300972107 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAEF7C0629B2985300972107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAEF7C0829B2985600972107 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAEF7C0B29B2985600972107 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAEF7C0D29B2985600972107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEF7C1229B2985700972107 /* One Rep MaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Rep MaxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEF7C3029B298B600972107 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		FAEF7C3229B29BC900972107 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		FAEF7C3529B2A32C00972107 /* workoutData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = workoutData.txt; sourceTree = "<group>"; };
+		FAEF7C3829B2A36500972107 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		FAEF7C3A29B2A3E300972107 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		FAEF7C3E29B2A84100972107 /* DataParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParserTests.swift; sourceTree = "<group>"; };
+		FAEF7C4129B2B5BE00972107 /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
+		FAEF7C4329B2B98200972107 /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
+		FAEF7C4529B2BAD000972107 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		FAEF7C4829B2CE9200972107 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
+		FAEF7C4A29B63F4100972107 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		FAEF7C4C29B6478300972107 /* ExerciseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewModel.swift; sourceTree = "<group>"; };
+		FAEF7C5129B64AEA00972107 /* OneRepMaxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxView.swift; sourceTree = "<group>"; };
+		FAEF7C5529B6667B00972107 /* UIOneRepMaxChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOneRepMaxChart.swift; sourceTree = "<group>"; };
+		FAEF7C5929B668A600972107 /* OneRepMaxChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepMaxChart.swift; sourceTree = "<group>"; };
+		FAEF7C6229B6B09800972107 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FAEF7C9F29B820C700972107 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEF7BF929B2985300972107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEF7C0F29B2985700972107 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAEF7BF329B2985300972107 = {
+			isa = PBXGroup;
+			children = (
+				FAEF7BFE29B2985300972107 /* One Rep Max */,
+				FAEF7C1529B2985700972107 /* One Rep MaxTests */,
+				FAEF7BFD29B2985300972107 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEF7BFD29B2985300972107 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7BFC29B2985300972107 /* One Rep Max.app */,
+				FAEF7C1229B2985700972107 /* One Rep MaxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEF7BFE29B2985300972107 /* One Rep Max */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7BFF29B2985300972107 /* AppDelegate.swift */,
+				FAEF7C0129B2985300972107 /* SceneDelegate.swift */,
+				FAEF7C0A29B2985600972107 /* LaunchScreen.storyboard */,
+				FAEF7C0529B2985300972107 /* Main.storyboard */,
+				FAEF7C3529B2A32C00972107 /* workoutData.txt */,
+				FAEF7C3729B2A33D00972107 /* History */,
+				FAEF7C2F29B2989D00972107 /* Calculators */,
+				FAEF7C4E29B6498A00972107 /* Views */,
+				FAEF7C4029B2B59400972107 /* Exercises */,
+				FAEF7C4729B2CE7000972107 /* Exercise Details */,
+				FAEF7C5E29B6AF7600972107 /* Strings */,
+				FAEF7C0829B2985600972107 /* Assets.xcassets */,
+				FAEF7C0D29B2985600972107 /* Info.plist */,
+			);
+			path = "One Rep Max";
+			sourceTree = "<group>";
+		};
+		FAEF7C1529B2985700972107 /* One Rep MaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C3229B29BC900972107 /* CalculatorTests.swift */,
+				FAEF7C3E29B2A84100972107 /* DataParserTests.swift */,
+			);
+			path = "One Rep MaxTests";
+			sourceTree = "<group>";
+		};
+		FAEF7C2F29B2989D00972107 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C3029B298B600972107 /* Calculator.swift */,
+				FAEF7C4A29B63F4100972107 /* Calculation.swift */,
+			);
+			path = Calculators;
+			sourceTree = "<group>";
+		};
+		FAEF7C3729B2A33D00972107 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C3829B2A36500972107 /* DataParser.swift */,
+				FAEF7C3A29B2A3E300972107 /* HistoryItem.swift */,
+				FAEF7C9F29B820C700972107 /* Exercise.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		FAEF7C4029B2B59400972107 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C4129B2B5BE00972107 /* ExercisesViewController.swift */,
+				FAEF7C4329B2B98200972107 /* ExercisesViewModel.swift */,
+				FAEF7C4529B2BAD000972107 /* ExerciseCell.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		FAEF7C4729B2CE7000972107 /* Exercise Details */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C4829B2CE9200972107 /* ExerciseDetailsViewController.swift */,
+				FAEF7C4C29B6478300972107 /* ExerciseDetailsViewModel.swift */,
+			);
+			path = "Exercise Details";
+			sourceTree = "<group>";
+		};
+		FAEF7C4E29B6498A00972107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C5129B64AEA00972107 /* OneRepMaxView.swift */,
+				FAEF7C5529B6667B00972107 /* UIOneRepMaxChart.swift */,
+				FAEF7C5929B668A600972107 /* OneRepMaxChart.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAEF7C5E29B6AF7600972107 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF7C6329B6B09800972107 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAEF7BFB29B2985300972107 /* One Rep Max */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEF7C2629B2985700972107 /* Build configuration list for PBXNativeTarget "One Rep Max" */;
+			buildPhases = (
+				FAEF7BF829B2985300972107 /* Sources */,
+				FAEF7BF929B2985300972107 /* Frameworks */,
+				FAEF7BFA29B2985300972107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "One Rep Max";
+			productName = "One Rep Max";
+			productReference = FAEF7BFC29B2985300972107 /* One Rep Max.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAEF7C1129B2985700972107 /* One Rep MaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEF7C2929B2985700972107 /* Build configuration list for PBXNativeTarget "One Rep MaxTests" */;
+			buildPhases = (
+				FAEF7C0E29B2985700972107 /* Sources */,
+				FAEF7C0F29B2985700972107 /* Frameworks */,
+				FAEF7C1029B2985700972107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEF7C1429B2985700972107 /* PBXTargetDependency */,
+			);
+			name = "One Rep MaxTests";
+			productName = "One Rep MaxTests";
+			productReference = FAEF7C1229B2985700972107 /* One Rep MaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEF7BF429B2985300972107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FAEF7BFB29B2985300972107 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FAEF7C1129B2985700972107 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FAEF7BFB29B2985300972107;
+					};
+				};
+			};
+			buildConfigurationList = FAEF7BF729B2985300972107 /* Build configuration list for PBXProject "One Rep Max" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAEF7BF329B2985300972107;
+			productRefGroup = FAEF7BFD29B2985300972107 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEF7BFB29B2985300972107 /* One Rep Max */,
+				FAEF7C1129B2985700972107 /* One Rep MaxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAEF7BFA29B2985300972107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEF7C6129B6B09800972107 /* Localizable.strings in Resources */,
+				FAEF7C0C29B2985600972107 /* LaunchScreen.storyboard in Resources */,
+				FAEF7C0929B2985600972107 /* Assets.xcassets in Resources */,
+				FAEF7C3629B2A32C00972107 /* workoutData.txt in Resources */,
+				FAEF7C0729B2985300972107 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEF7C1029B2985700972107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEF7BF829B2985300972107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEF7C5229B64AEA00972107 /* OneRepMaxView.swift in Sources */,
+				FAEF7CA029B820C700972107 /* Exercise.swift in Sources */,
+				FAEF7C4429B2B98200972107 /* ExercisesViewModel.swift in Sources */,
+				FAEF7C5A29B668A600972107 /* OneRepMaxChart.swift in Sources */,
+				FAEF7C5629B6667B00972107 /* UIOneRepMaxChart.swift in Sources */,
+				FAEF7C3B29B2A3E300972107 /* HistoryItem.swift in Sources */,
+				FAEF7C4229B2B5BE00972107 /* ExercisesViewController.swift in Sources */,
+				FAEF7C4929B2CE9200972107 /* ExerciseDetailsViewController.swift in Sources */,
+				FAEF7C3929B2A36500972107 /* DataParser.swift in Sources */,
+				FAEF7C3129B298B600972107 /* Calculator.swift in Sources */,
+				FAEF7C4629B2BAD000972107 /* ExerciseCell.swift in Sources */,
+				FAEF7C4D29B6478300972107 /* ExerciseDetailsViewModel.swift in Sources */,
+				FAEF7C0029B2985300972107 /* AppDelegate.swift in Sources */,
+				FAEF7C0229B2985300972107 /* SceneDelegate.swift in Sources */,
+				FAEF7C4B29B63F4100972107 /* Calculation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEF7C0E29B2985700972107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEF7C3F29B2A84100972107 /* DataParserTests.swift in Sources */,
+				FAEF7C3329B29BC900972107 /* CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEF7C1429B2985700972107 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAEF7BFB29B2985300972107 /* One Rep Max */;
+			targetProxy = FAEF7C1329B2985700972107 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAEF7C0529B2985300972107 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEF7C0629B2985300972107 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAEF7C0A29B2985600972107 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEF7C0B29B2985600972107 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FAEF7C6329B6B09800972107 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAEF7C6229B6B09800972107 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAEF7C2429B2985700972107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAEF7C2529B2985700972107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAEF7C2729B2985700972107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "One Rep Max/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DaveAlton.One-Rep-Max";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAEF7C2829B2985700972107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "One Rep Max/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DaveAlton.One-Rep-Max";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAEF7C2A29B2985700972107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DaveAlton.One-Rep-MaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Rep Max.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/One Rep Max";
+			};
+			name = Debug;
+		};
+		FAEF7C2B29B2985700972107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "DaveAlton.One-Rep-MaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Rep Max.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/One Rep Max";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEF7BF729B2985300972107 /* Build configuration list for PBXProject "One Rep Max" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEF7C2429B2985700972107 /* Debug */,
+				FAEF7C2529B2985700972107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEF7C2629B2985700972107 /* Build configuration list for PBXNativeTarget "One Rep Max" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEF7C2729B2985700972107 /* Debug */,
+				FAEF7C2829B2985700972107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEF7C2929B2985700972107 /* Build configuration list for PBXNativeTarget "One Rep MaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEF7C2A29B2985700972107 /* Debug */,
+				FAEF7C2B29B2985700972107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEF7BF429B2985300972107 /* Project object */;
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yaV-Dz-EYc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exercises View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExercisesViewController" customModule="One_Rep_Max" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xQl-Mc-oJg">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="83" id="feU-WO-ySq" customClass="ExerciseCell" customModule="One_Rep_Max" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="83"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="feU-WO-ySq" id="FgS-nl-3ky">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nY-0f-4V9" customClass="OneRepMaxView" customModule="One_Rep_Max" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="83"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="exerciseName" value="Bench Press"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="One Rep Max • lb"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="oneRepMax" value="315"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="1nY-0f-4V9" firstAttribute="leading" secondItem="FgS-nl-3ky" secondAttribute="leading" id="F6Y-fw-xIX"/>
+                                                <constraint firstAttribute="trailing" secondItem="1nY-0f-4V9" secondAttribute="trailing" id="gAR-iM-Khc"/>
+                                                <constraint firstItem="1nY-0f-4V9" firstAttribute="top" secondItem="FgS-nl-3ky" secondAttribute="top" id="qjU-j8-zqk"/>
+                                                <constraint firstAttribute="bottom" secondItem="1nY-0f-4V9" secondAttribute="bottom" id="yd4-JN-HTr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="oneRepMaxView" destination="1nY-0f-4V9" id="yEX-dk-mrb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CSV-Fa-WNQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="IVp-68-pvu"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgY-4w-b48">
+                                <rect key="frame" x="171.66666666666666" y="401" width="50" height="50"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-PE-pcf">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8G3-z8-tjG"/>
+                                    <constraint firstAttribute="trailing" secondItem="kw5-PE-pcf" secondAttribute="trailing" id="9mh-zZ-zrK"/>
+                                    <constraint firstItem="kw5-PE-pcf" firstAttribute="leading" secondItem="HgY-4w-b48" secondAttribute="leading" id="bds-2z-hhZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="kx0-WP-iyR"/>
+                                    <constraint firstAttribute="bottom" secondItem="kw5-PE-pcf" secondAttribute="bottom" id="mBf-wk-VQW"/>
+                                    <constraint firstItem="kw5-PE-pcf" firstAttribute="top" secondItem="HgY-4w-b48" secondAttribute="top" id="qXT-g2-sSV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xQl-Mc-oJg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="It7-Yp-FH7"/>
+                            <constraint firstItem="xQl-Mc-oJg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="OED-j2-6uv"/>
+                            <constraint firstItem="HgY-4w-b48" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XC3-HI-OKd"/>
+                            <constraint firstItem="HgY-4w-b48" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YGh-Iq-UAe"/>
+                            <constraint firstItem="xQl-Mc-oJg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gpO-CI-QT4"/>
+                            <constraint firstItem="xQl-Mc-oJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rnJ-ud-yEO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zPo-Zj-fbI"/>
+                    <connections>
+                        <outlet property="loadingSpinner" destination="HgY-4w-b48" id="a4g-eT-KjD"/>
+                        <outlet property="tableView" destination="xQl-Mc-oJg" id="Alz-wF-f1a"/>
+                        <segue destination="5gi-CN-P8E" kind="show" identifier="ExerciseDetails" id="JdP-Y4-Ov8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632.82442748091603" y="-416.19718309859155"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UDV-wM-UI8">
+            <objects>
+                <navigationController id="yaV-Dz-EYc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWY-pf-JDk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LGW-Nz-GIY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6Q-Eg-SQo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="-416"/>
+        </scene>
+        <!--Exercise Details View Controller-->
+        <scene sceneID="Q95-Uc-zn8">
+            <objects>
+                <viewController id="5gi-CN-P8E" customClass="ExerciseDetailsViewController" customModule="One_Rep_Max" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AIf-Pv-RN8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="15B-DP-cEl">
+                                <rect key="frame" x="0.0" y="103" width="393" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k77-Rk-5gV" customClass="OneRepMaxView" customModule="One_Rep_Max" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="exerciseName" value="Bench Press"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitle" value="&quot;One Rep Max • lb&quot;"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="oneRepMax" value="315"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rHV-Fn-Erf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="arw-8A-2lH"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="15B-DP-cEl" firstAttribute="leading" secondItem="arw-8A-2lH" secondAttribute="leading" id="m8r-3Y-q3b"/>
+                            <constraint firstItem="arw-8A-2lH" firstAttribute="trailing" secondItem="15B-DP-cEl" secondAttribute="trailing" id="pMw-6z-9sh"/>
+                            <constraint firstItem="15B-DP-cEl" firstAttribute="top" secondItem="arw-8A-2lH" secondAttribute="top" id="ssf-a9-lIV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T9V-yP-IwO"/>
+                    <connections>
+                        <outlet property="oneRepMaxView" destination="k77-Rk-5gV" id="lXZ-eS-40Z"/>
+                        <outlet property="stackView" destination="15B-DP-cEl" id="yVQ-qV-axh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="de3-Fw-u7C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513.7404580152672" y="-416.19718309859155"/>
+        </scene>
+    </scenes>
+</document>

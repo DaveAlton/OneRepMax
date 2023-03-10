@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  One Rep Max
+
+  Created by Dave Alton on 2023-03-06.
+  
+*/
+
+// String to show an alert with an error that the exercise history could not be fetched
+"ExercisesViewController_couldNotGetExerciseHistory" = "Could Not Get Exercise History";
+
+// String to dismiss an alert
+"ExercisesViewController_ok" = "OK";
+
+// String for a label on the One Rep Max chart
+"OneRepMaxChart_date" = "Date";
+
+// String for a label on the One Rep Max chart
+"OneRepMaxChart_oneRepMax" = "One Rep Max";
+
+// String to show a sublabel with 'One Rep Max'
+"OneRepMaxView_oneRepMax" = "One Rep Max";
+
+// String to show a sublabel including 'One Rep Max' and a weight unit (eg. lb)
+"OneRepMaxView_oneRepMax_withWeightUnit" = "One Rep Max • %1$@";
